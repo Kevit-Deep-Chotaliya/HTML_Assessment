@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validation Form</title>
+        <style>
+        form {
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: max-content;
+            border: 2px solid black;
+        }
+    </style>
+
+    </head>
+    <body>
+        <h1>Validation Form</h1>
+        <div class="container">
+            <form>
+                <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Enter your name"
+                    required><br>
+                <br>
+                <label for="email">Email : </label>
+                <input type="email" id="email"
+                    placeholder="user@example.com"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Please enter a valid lowercase email address (e.g., user@example.com)"
+                    required><br><br>
+
+                <label for="age">Age (Must be between 18 and 99):</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="18"
+                    max="65"
+                    required><br><br>
+
+                <label for="address">Address : </label>
+                <textarea name="address" id="address" minlength="4"
+                    maxlength="8"
+                    placeholder="Enter your address here..."></textarea><br><br>
+
+                <label for="password">password : </label>
+                <input type="password" id="password"
+                    placeholder="Enter your password" minlength="8"
+                    pattern="[A-za-z0-9]{8,50}"
+                    title="please enter min 8 and max 50 characters"><br><br>
+
+                <label for="dob">Date of Birth : </label>
+                <input type="date" id="dob"><br><br>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male">
+
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender"
+                        value="female">
+                </fieldset>
+                <br>
+
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+
+    </body>
+</html>

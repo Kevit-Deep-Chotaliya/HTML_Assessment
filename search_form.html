@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Form</title>
+        <style>
+            *{
+                padding: 10px;
+            }
+        form {
+            text-align: left;
+            padding: 20px;
+        }
+        .container {
+            width: max-content;
+            border: 2px solid black;
+        }
+    </style>
+
+    </head>
+    <body>
+        <h1>Search Form</h1>
+        <div class="container">
+        <form>
+
+            <label for="search">Search the city you want to explore today.</label>
+            <input list="citylist" name="city" id="search">
+
+            <datalist id="citylist">
+                <option value="Rajkot"></option>
+                <option value="Vadodara"></option>
+                <option value="Surat"></option>
+                <option value="Gondal"></option>
+                <option value="Ahmedabad"></option>
+                <option value="Amreli"></option>
+                <option value="Jetpur"></option>
+                <option value="Virpur"></option>
+                <option value="Viramnagar"></option>
+                <option value="Valsad"></option>
+                <option value="Himmatnagar"></option>
+                <option value="Bharuch"></option>
+            </datalist>
+
+        </form>
+        </div>
+
+    </body>
+</html>

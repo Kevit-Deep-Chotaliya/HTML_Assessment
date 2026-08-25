@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registartion Form</title>
+        <style>
+        form {
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: max-content;
+            border: 2px solid black;
+        }
+    </style>
+
+    </head>
+    <body>
+        <h1>Student Registration Form</h1>
+        <div class="container">
+        <form>
+            <label for="name">Name : </label>
+            <input type="text" id="name" placeholder="Enter your name"><br>
+            <br>
+            <label for="email">Email : </label>
+            <input type="email" id="email"
+                placeholder="Enter your email"><br><br>
+
+            <label for="password">password : </label>
+            <input type="password" id="password"
+                placeholder="Enter your password"><br><br>
+
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob"><br><br>
+
+            <fieldset>
+                <legend>Gender</legend>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+            </fieldset>
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+        </div>
+
+    </body>
+</html>
