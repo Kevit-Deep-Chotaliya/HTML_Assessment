@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            img {
+                width: 30%;
+                height: auto;
+            }
+
+            @media (min-width: 600px) {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            @media (max-width: 800px) {
+                img {
+                    width: 50%;
+                    height: 100%;
+                }
+            }
+            @media (min-width:500px) and (max-width: 550px) {
+                img {
+                    width: 70%;
+                    height: 100%;
+                }
+            }
+            @media only screen and (min-width: 850px) {
+                img {
+                    width: 90%;
+                    height: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nrHBHHPwXU_iq5lngaXYNxnAbruy5Jim43yaL6Pstw&s=10"
+            alt="Coffee">
+    </body>
+</html>
